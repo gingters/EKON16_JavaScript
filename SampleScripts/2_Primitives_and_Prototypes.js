@@ -30,7 +30,7 @@ var callReverse = function(value) {
 
 // This does not work:
 callReverse(string1);
-/*
+
 
 // There are no classes in JavaScript - only prototypes
 // modify the prototype of String:
@@ -44,8 +44,16 @@ String.prototype.reverse = function() {
 };
 
 callReverse(string1);
-/*
 
 
-*/
+
+
+Function.prototype.method = function(name, func) {
+	if (!this.prototype[name])
+		this.prototype[name] = func;
+	return this;
+};
+
+
+
 phantom.exit();

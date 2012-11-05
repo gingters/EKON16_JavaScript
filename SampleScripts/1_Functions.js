@@ -1,6 +1,8 @@
 
 console.log('Executing');
 
+
+
 var say = function(arg) {
 	document.write("<h2>" + arg + "</h2>");
 	console.log(arg);
@@ -9,17 +11,10 @@ var say = function(arg) {
 
 say('Hello world.');
 
+
+
+
 /*
-
-
-
-Function.prototype.method = function(name, func) {
-	if (!this.prototype[name])
-		this.prototype[name] = func;
-	return this;
-};
-
-
 console.log('Executed');
 document.write('1_Functions.js loaded.<br />');
 

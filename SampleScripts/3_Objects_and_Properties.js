@@ -21,7 +21,7 @@ var t = function() {
 
 t();
 
-/*
+
 testObject.property1 = 'Hello';
 t();
 
@@ -45,7 +45,7 @@ if (typeof Object.create === 'undefined') {
 }
 
 var anotherTestObject = Object.create(testObject);
-
+/*
 anotherTestObject.property2 = 'Test';
 anotherTestObject.property3 = 1;
 testObject.property4 = true;
